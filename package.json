@@ -1,0 +1,23 @@
+{
+  "name": "tasks",
+  "version": "1.0.0",
+  "description": "controle de tempo de tarefas",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "CLube do Dev - Vinikir",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^16.0.7"
+  },
+  "dependencies": {
+    "electron-db": "^0.15.7",
+    "electron-modal": "^1.0.0",
+    "electron-reload": "^2.0.0-alpha.1",
+    "lokijs": "^1.5.12",
+    "moment": "^2.29.1",
+    "pouchdb": "^7.2.2"
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+		
+		<link rel="stylesheet" href="../public/css/index.css" type="text/css" />
+		
+		<title>Clube do Dev - Task Management</title>
+	</head>
+	
+	<body>
+		<div class="container">
+			<div class="fixed">
+				<div class="row ">
+					<div >
+						<label>Buscar Task</label>
+					
+					</div>
+					<div >
+						<input type="text" class='input' id="taskBuscar" />
+						<button type="button" class="btn btn-buscar" onclick="buscar()">Buscar</button>
+						<button type="button" class="btn" onclick="getTaks()">Limpar</button>
+					</div>
+				</div><br>
+				<div class="row" >
+					<div >
+						<label>Criar e Iniciar Task</label><br>
+						<input type="text" id="taksId" class='input' />
+						<button type="button" class="btn" id="criar">Criar e iniciar</button>
+					</div>
+				</div>
+			</div>
+			<br>
+
+			<div>
+				<table class="table">
+					<thead>
+						<tr>
+							<td>Task</td>
+							<td>Tempo</td>
+							<td>Ação</td>
+						</tr>
+					</thead>
+					<tbody id="bodyTable">
+						
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</body>
+	<script  src="./API/API.js" ></script>
+	<script  src="../public/js/funcoes.js" ></script>
+
+</html>
